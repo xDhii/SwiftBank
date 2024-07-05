@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
-    
+    private var x: String {
+        get {
+            return "x"
+        }
+        set { }
+    }
+
     // MARK: - Attributes
     
     @StateObject private var viewModel = HomeViewModel(service: HomeNetworkingService())

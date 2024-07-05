@@ -10,7 +10,8 @@ import Foundation
 class HomeModel: NSObject, Decodable {
     
     private(set) var header: Header
-    
+    private(set) var items: [SectionModel]?
+
     struct Header: Decodable {
         var title: TextModel
     }
