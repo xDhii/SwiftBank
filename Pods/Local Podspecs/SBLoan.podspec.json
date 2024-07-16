@@ -1,0 +1,24 @@
+{
+  "name": "SBLoan",
+  "version": "0.2.2",
+  "summary": "Módulo de empréstimos para o aplicativo do SwiftBank.",
+  "description": "SB Loan é uma biblioteca que permite o usuário acessar sua carteira de crédito disponível.",
+  "homepage": "https://github.com/xDhii/SBLoan",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Adriano Araujo Valumin": "adriano.valumin@outlook.com"
+  },
+  "source": {
+    "git": "https://github.com/xDhii/SBLoan.git",
+    "tag": "0.2.2"
+  },
+  "platforms": {
+    "ios": "17.4"
+  },
+  "swift_versions": "5.10",
+  "source_files": "Classes/**/*",
+  "swift_version": "5.10"
+}

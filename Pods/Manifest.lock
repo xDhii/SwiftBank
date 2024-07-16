@@ -1,0 +1,22 @@
+PODS:
+  - SBLoan (0.2.2)
+
+DEPENDENCIES:
+  - SBLoan (from `https://github.com/xDhii/SBLoan.git`, tag `0.2.2`)
+
+EXTERNAL SOURCES:
+  SBLoan:
+    :git: https://github.com/xDhii/SBLoan.git
+    :tag: 0.2.2
+
+CHECKOUT OPTIONS:
+  SBLoan:
+    :git: https://github.com/xDhii/SBLoan.git
+    :tag: 0.2.2
+
+SPEC CHECKSUMS:
+  SBLoan: 1ceae27cdefa5d157d639e1192eb2e2af1c497ee
+
+PODFILE CHECKSUM: be014864843020c12926f619921f70fdda09c6d4
+
+COCOAPODS: 1.15.2

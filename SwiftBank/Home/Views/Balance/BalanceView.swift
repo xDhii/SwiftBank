@@ -64,7 +64,16 @@ struct BalanceView: View {
 			HStack(spacing: 13) {
 				ForEach(balanceResponse.items, id: \.id) { mainAction in
 					Button {
-						print(mainAction.title.text)
+						let routerHandler = RouterHandler()
+						guard let deeplink = URL(string: mainAction.deeplink ?? "") else {
+							return
+						}
+						Task {
+							if let route = await routerHandler.find(from: deeplink) {
+								let routerManager = NavigationRouter.shared
+								routerManager.push(to: route)
+							}
+						}
 					} label: {
 						VStack {
 							Circle()

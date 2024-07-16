@@ -12,6 +12,8 @@ struct HomeView: View {
 
 	@StateObject private var viewModel = HomeViewModel(service: HomeNetworkingService())
 
+	@EnvironmentObject private var routerManager: NavigationRouter
+
 	// MARK: - UI Components
 
 	private let backgroundColor = Color(red: 240.0 / 255.0,
@@ -23,7 +25,7 @@ struct HomeView: View {
 	                                blue: 5.0 / 255.0)
 
 	var body: some View {
-		NavigationView {
+		NavigationStack(path: $routerManager.router) {
 			ZStack(alignment: .top) {
 				LinearGradient(gradient: Gradient(colors: [yellowColor, backgroundColor]),
 				               startPoint: .top,
@@ -55,6 +57,7 @@ struct HomeView: View {
 							try await viewModel.getHome()
 						}
 					}
+					.navigationDestination(for: Route.self, destination: { $0 })
 				}
 				.toolbar {
 					ToolbarItemGroup(placement: .navigationBarLeading) {
