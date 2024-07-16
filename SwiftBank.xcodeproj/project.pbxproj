@@ -33,7 +33,7 @@
 		BC2013F62C45D1D600327599 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2013F52C45D1D600327599 /* Route.swift */; };
 		BC2013F92C45D2DC00327599 /* PixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2013F82C45D2DC00327599 /* PixView.swift */; };
 		BC2013FB2C45D92100327599 /* RouterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2013FA2C45D92100327599 /* RouterHandler.swift */; };
-		BC2013FD2C47043900327599 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2013FC2C47043900327599 /* URLExtension.swift */; };
+		BC2013FF2C47156600327599 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2013FE2C47156600327599 /* URLExtension.swift */; };
 		BC62CF482C3F246A00CB31F6 /* CreditCardSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62CF472C3F246A00CB31F6 /* CreditCardSection.swift */; };
 		BC62CF4B2C40124A00CB31F6 /* GenericSectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62CF4A2C40124A00CB31F6 /* GenericSectionResponse.swift */; };
 		BC62CF4D2C4012C100CB31F6 /* GenericSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62CF4C2C4012C100CB31F6 /* GenericSection.swift */; };
@@ -69,7 +69,7 @@
 		BC2013F52C45D1D600327599 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Route.swift; path = ../../../../../../../Route.swift; sourceTree = "<group>"; };
 		BC2013F82C45D2DC00327599 /* PixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PixView.swift; path = ../../../../../../../../PixView.swift; sourceTree = "<group>"; };
 		BC2013FA2C45D92100327599 /* RouterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RouterHandler.swift; path = ../../../../../../../RouterHandler.swift; sourceTree = "<group>"; };
-		BC2013FC2C47043900327599 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URLExtension.swift; path = ../../../../../../../../URLExtension.swift; sourceTree = "<group>"; };
+		BC2013FE2C47156600327599 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		BC2AA95D2C40719600EB618B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BC62CF472C3F246A00CB31F6 /* CreditCardSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreditCardSection.swift; path = ../../../../../../../../../CreditCardSection.swift; sourceTree = "<group>"; };
 		BC62CF4A2C40124A00CB31F6 /* GenericSectionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenericSectionResponse.swift; path = ../../../../../../../../../GenericSectionResponse.swift; sourceTree = "<group>"; };
@@ -305,7 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				BC8F5BF62C37625500A6D5D0 /* DictionaryDecodable.swift */,
-				BC2013FC2C47043900327599 /* URLExtension.swift */,
+				BC2013FE2C47156600327599 /* URLExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -429,6 +429,7 @@
 				03E5D8EE2B45E20F00B9BC9A /* HomeViewModel.swift in Sources */,
 				03E5D8FA2B45E50D00B9BC9A /* HTTPClient.swift in Sources */,
 				BC2013F42C45D03700327599 /* NavigationRouter.swift in Sources */,
+				BC2013FF2C47156600327599 /* URLExtension.swift in Sources */,
 				188629C52B88EC2000DA3CCD /* HomeModel.swift in Sources */,
 				BC0B827C2C3898B80036C3D4 /* BalanceResponse.swift in Sources */,
 				BC03DFDA2C3F223C00C9795A /* CreditCardResponse.swift in Sources */,
@@ -442,7 +443,6 @@
 				BCB198652C2B76D10001E34E /* SectionModel.swift in Sources */,
 				188629C72B88EC3F00DA3CCD /* TextModel.swift in Sources */,
 				BC62CF4D2C4012C100CB31F6 /* GenericSection.swift in Sources */,
-				BC2013FD2C47043900327599 /* URLExtension.swift in Sources */,
 				BC2013F62C45D1D600327599 /* Route.swift in Sources */,
 				BC2013F92C45D2DC00327599 /* PixView.swift in Sources */,
 				03E5D8E82B425BC700B9BC9A /* ActivitiesView.swift in Sources */,
