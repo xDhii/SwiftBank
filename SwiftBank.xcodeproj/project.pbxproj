@@ -34,6 +34,7 @@
 		BC2013F92C45D2DC00327599 /* PixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2013F82C45D2DC00327599 /* PixView.swift */; };
 		BC2013FB2C45D92100327599 /* RouterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2013FA2C45D92100327599 /* RouterHandler.swift */; };
 		BC2013FF2C47156600327599 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2013FE2C47156600327599 /* URLExtension.swift */; };
+		BC2014052C4717B000327599 /* GenericErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2014042C4717B000327599 /* GenericErrorView.swift */; };
 		BC62CF482C3F246A00CB31F6 /* CreditCardSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62CF472C3F246A00CB31F6 /* CreditCardSection.swift */; };
 		BC62CF4B2C40124A00CB31F6 /* GenericSectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62CF4A2C40124A00CB31F6 /* GenericSectionResponse.swift */; };
 		BC62CF4D2C4012C100CB31F6 /* GenericSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62CF4C2C4012C100CB31F6 /* GenericSection.swift */; };
@@ -63,13 +64,14 @@
 		A1B7DFBE1CA2DF2FA219E05C /* Pods_SwiftBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC03DFD92C3F223C00C9795A /* CreditCardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreditCardResponse.swift; path = ../../../../../../../../../CreditCardResponse.swift; sourceTree = "<group>"; };
 		BC0B827B2C3898B80036C3D4 /* BalanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BalanceResponse.swift; path = ../../../../../../../../../BalanceResponse.swift; sourceTree = "<group>"; };
-		BC0B827F2C38A4050036C3D4 /* GenericSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenericSectionView.swift; path = ../../../../../../../../GenericSectionView.swift; sourceTree = "<group>"; };
+		BC0B827F2C38A4050036C3D4 /* GenericSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenericSectionView.swift; path = ../../../../../../../../../GenericSectionView.swift; sourceTree = "<group>"; };
 		BC0B82812C38A4840036C3D4 /* BalanceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BalanceSection.swift; path = ../../../../../../../../../BalanceSection.swift; sourceTree = "<group>"; };
 		BC2013F32C45D03700327599 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationRouter.swift; path = ../../../../../../../NavigationRouter.swift; sourceTree = "<group>"; };
 		BC2013F52C45D1D600327599 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Route.swift; path = ../../../../../../../Route.swift; sourceTree = "<group>"; };
-		BC2013F82C45D2DC00327599 /* PixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PixView.swift; path = ../../../../../../../../PixView.swift; sourceTree = "<group>"; };
+		BC2013F82C45D2DC00327599 /* PixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PixView.swift; path = ../../../../../../../../../PixView.swift; sourceTree = "<group>"; };
 		BC2013FA2C45D92100327599 /* RouterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RouterHandler.swift; path = ../../../../../../../RouterHandler.swift; sourceTree = "<group>"; };
 		BC2013FE2C47156600327599 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		BC2014042C4717B000327599 /* GenericErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericErrorView.swift; sourceTree = "<group>"; };
 		BC2AA95D2C40719600EB618B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BC62CF472C3F246A00CB31F6 /* CreditCardSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreditCardSection.swift; path = ../../../../../../../../../CreditCardSection.swift; sourceTree = "<group>"; };
 		BC62CF4A2C40124A00CB31F6 /* GenericSectionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenericSectionResponse.swift; path = ../../../../../../../../../GenericSectionResponse.swift; sourceTree = "<group>"; };
@@ -159,24 +161,24 @@
 			path = CreditCard;
 			sourceTree = "<group>";
 		};
-		03E5D8DE2B42138600B9BC9A /* GenericView */ = {
+		03E5D8DE2B42138600B9BC9A /* GenericSection */ = {
 			isa = PBXGroup;
 			children = (
 				03E5D8DF2B4213BD00B9BC9A /* GenericView.swift */,
 			);
-			path = GenericView;
+			path = GenericSection;
 			sourceTree = "<group>";
 		};
 		03E5D8E22B421EB400B9BC9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				03E5D8FF2B45F3C800B9BC9A /* HomeView.swift */,
+				03E5D8E62B425B9100B9BC9A /* Activities */,
 				03BD4ABB2B3CC70200341CE2 /* Balance */,
 				03E5D8DB2B40D76E00B9BC9A /* CreditCard */,
-				03E5D8DE2B42138600B9BC9A /* GenericView */,
-				03E5D8E62B425B9100B9BC9A /* Activities */,
-				BC0B827F2C38A4050036C3D4 /* GenericSectionView.swift */,
-				BC2013F82C45D2DC00327599 /* PixView.swift */,
+				BC2014002C47167900327599 /* GenericError */,
+				03E5D8DE2B42138600B9BC9A /* GenericSection */,
+				BC2014012C47173A00327599 /* Pix */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,9 +294,26 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		BC2014002C47167900327599 /* GenericError */ = {
+			isa = PBXGroup;
+			children = (
+				BC2014042C4717B000327599 /* GenericErrorView.swift */,
+			);
+			path = GenericError;
+			sourceTree = "<group>";
+		};
+		BC2014012C47173A00327599 /* Pix */ = {
+			isa = PBXGroup;
+			children = (
+				BC2013F82C45D2DC00327599 /* PixView.swift */,
+			);
+			path = Pix;
+			sourceTree = "<group>";
+		};
 		BC62CF492C40122600CB31F6 /* GenericSection */ = {
 			isa = PBXGroup;
 			children = (
+				BC0B827F2C38A4050036C3D4 /* GenericSectionView.swift */,
 				BC62CF4A2C40124A00CB31F6 /* GenericSectionResponse.swift */,
 				BC62CF4C2C4012C100CB31F6 /* GenericSection.swift */,
 			);
@@ -424,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2014052C4717B000327599 /* GenericErrorView.swift in Sources */,
 				03BD4ABD2B3CC72000341CE2 /* BalanceView.swift in Sources */,
 				BC2013FB2C45D92100327599 /* RouterHandler.swift in Sources */,
 				03E5D8EE2B45E20F00B9BC9A /* HomeViewModel.swift in Sources */,
