@@ -18,9 +18,13 @@ public struct SBLoanView: View {
                                     green: 186.0 / 255.0,
                                     blue: 5.0 / 255.0)
 
+	private(set) var amount: String
+
     // MARK: - Init
 
-    public init() { }
+	public init(_ amount: String) {
+		self.amount = amount
+	}
 
     // MARK: - View
 
@@ -89,11 +93,12 @@ public struct SBLoanView: View {
 
     var headerCardView: some View {
         VStack(alignment: .leading) {
-            Text("Veja sua opção de crédito pré-aprovada:")
+            Text("Veja sua opção de crédito pré-aprovada: R$ \(amount)")
                 .font(.system(size: 16))
                 .foregroundStyle(.black)
                 .fontWeight(.medium)
                 .padding(.bottom, 5)
+				.multilineTextAlignment(.leading)
 
             HStack {
                 Image(systemName: "dollarsign.arrow.circlepath")
@@ -124,5 +129,5 @@ public struct SBLoanView: View {
 
 
 #Preview {
-    SBLoanView()
+	SBLoanView("3000")
 }

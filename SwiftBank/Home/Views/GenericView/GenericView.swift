@@ -23,7 +23,7 @@ struct GenericView: View {
 
 		NavigationStack(path: $routerManager.router) {
 			Button {
-				print("Deeplink: \(genericResponse.deeplink)")
+				print("Deeplink: \(genericResponse.deeplink ?? "")")
 				let routerHandler = RouterHandler()
 				guard let deeplink = URL(string: genericResponse.deeplink ?? "") else {
 					return
