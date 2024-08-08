@@ -104,23 +104,20 @@ struct BalanceView: View {
 	}
 }
 
-struct BalanceView_Previews: PreviewProvider {
-	static var previews: some View {
-		BalanceView(
-			balanceResponse: BalanceResponse(
-				amount: BalanceResponse
-					.Amount(
-						currencySymbol: "R$",
-						value: TextModel(text: "100,00", fontSize: 28, color: "#000000")
-					),
-				items: [
-					BalanceResponse.BalanceItem(id: "pix", title: TextModel(text: "Pix", fontSize: 14, color: "#CCCCCC"), icon: "pix-icon"),
-					BalanceResponse.BalanceItem(id: "transferir", title: TextModel(text: "Transferir", fontSize: 14, color: "#CCCCCC"), icon: "transfer-money-icon"),
-					BalanceResponse.BalanceItem(id: "qr-code", title: TextModel(text: "QR Code", fontSize: 14, color: "#CCCCCC"), icon: "qr-code-icon"),
-					BalanceResponse.BalanceItem(id: "recarga", title: TextModel(text: "Recarga", fontSize: 14, color: "#CCCCCC"), icon: "cellphone-icon"),
-				]
-			)
+#Preview(traits: .sizeThatFitsLayout) {
+	BalanceView(
+		balanceResponse: BalanceResponse(
+			amount: BalanceResponse
+				.Amount(
+					currencySymbol: "R$",
+					value: TextModel(text: "100,00", fontSize: 28, color: "#000000")
+				),
+			items: [
+				BalanceResponse.BalanceItem(id: "pix", title: TextModel(text: "Pix", fontSize: 14, color: "#CCCCCC"), icon: "pix-icon"),
+				BalanceResponse.BalanceItem(id: "transferir", title: TextModel(text: "Transferir", fontSize: 14, color: "#CCCCCC"), icon: "transfer-money-icon"),
+				BalanceResponse.BalanceItem(id: "qr-code", title: TextModel(text: "QR Code", fontSize: 14, color: "#CCCCCC"), icon: "qr-code-icon"),
+				BalanceResponse.BalanceItem(id: "recarga", title: TextModel(text: "Recarga", fontSize: 14, color: "#CCCCCC"), icon: "cellphone-icon"),
+			]
 		)
-		.previewLayout(.sizeThatFits)
-	}
+	)
 }
